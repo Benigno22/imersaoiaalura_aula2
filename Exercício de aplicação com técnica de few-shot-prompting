@@ -1,0 +1,37 @@
+{
+  "runSettings": {
+    "temperature": 1.0,
+    "model": "models/gemini-1.5-pro-latest",
+    "candidateCount": 1,
+    "topP": 0.95,
+    "maxOutputTokens": 8192,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_HATE_SPEECH",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }],
+    "responseMimeType": "text/plain"
+  },
+  "multiturnPrompt": {
+    "primingExchanges": [{
+      "source": "USER",
+      "id": "20EBA2CA-1632-4C2E-AC44-04BA14F2FD1F"
+    }],
+    "sessions": [{
+      "sessionExchanges": [{
+        "request": "Dado os seguintes textos com os respectivos títulos\n\nTexto: A LinhaUni, concessionária da Linha 6-Laranja de metrô, estuda solicitar o primeiro reequilíbrio econômico do contrato de concessão após se deparar com situações não previstas nos estudos do governo.\nTítulo: Problemas geológicos na Linha 6-Laranja podem levar a ressarcimento financeiro para a LinhaUni\n--------\nTexto: A Acciona, empresa espanhola responsável pela construção da Linha 6-Laranja, informou nesta semana que as obras do Pátio Morro Grande atingiram a marca de 63,42% de conclusão.\nTítulo: Linha 6-Laranja: Pátio Morro Grande atinge 63,42% de conclusão\n-----\nTexto: A LinhaUni anunciou nesta semana o início das escavações do poço do futuro VSE Frei Caneca. O local servirá como saída de emergência e ventilação para a Linha 6-Laranja e, como seu nome sugere, fica na rua localizada na Bela Vista.\nTítulo: Poço de ventilação Frei Caneca da Linha 6-Laranja começa a ser escavado finalmente\n----\nTexto: Imagens e vídeo mostram Tuneladora Sul rompendo a parede do VSE Pacaembu, que fica em frente à Praça Charles Miller nesta semana\nTítulo: Tatuzão da Linha 6-Laranja “chegou” ao Estádio do Pacaembu\n-----\nTexto: As obras do Pátio Morro Grande da Linha 6-Laranja de metrô atingiram um marco importante. Todas as vias que deverão alocar os trens foram implantadas e niveladas.\nTítulo: Acciona conclui montagem de 100% das vias do Pátio Morro Grande da Linha 6-Laranja\n\nEscreva o título do seguinte texto: \nTexto: O Tatuzão Norte, da Linha 6-Laranja, deve retomar as escavações no fim de abril, segundo a assessoria da Linha Uni. A tuneladora chegou à estação Itaberaba-Hospital Vila Penteado na sexta-feira, 1º de março. Com isso, terá uma pausa para manutenção de quase 2 meses.\nTítulo: ",
+        "response": "## Opções de títulos para o texto:\n\n**Opção 1 (informativa):** Tatuzão Norte da Linha 6-Laranja faz pausa para manutenção e retorna em abril\n\n**Opção 2 (com localização):** Tatuzão chega à Itaberaba e faz pausa na escavação da Linha 6 \n\n**Opção 3 (com destaque para a pausa):** Escavações da Linha 6-Laranja na Zona Norte são interrompidas para manutenção \n",
+        "source": "MODEL",
+        "id": "E9F9E40C-6A88-4ADC-A8AA-F1CB718FB814"
+      }]
+    }]
+  }
+}
